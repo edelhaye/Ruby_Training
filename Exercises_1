@@ -39,7 +39,8 @@ age = 25
 puts  "Hello, your name is #{name} and you are #{age} years old. "
 
 
-# Exercise 6
+# Exercise 5: show in editor
+
 a = 9
 b = 3
 c = 7
@@ -51,4 +52,27 @@ a % b == c / b || a / b – 1 == c / b
 # Exercise 6: Conditionals
 if 1 < 2
   print "I'm getting printed because one is less than two!"
+end
+
+# Exercise 7: 
+if 10 < 2
+  print "I'm getting printed because one is less than two!"
+else 
+  print "Dummie, one is not less than two!"
+end
+
+# Challenge Exercise 8
+
+print "Enter a length variable: "
+length = gets.to_i
+print "Enter a width variable: "
+width = gets.to_i
+print "Enter a height variable: "
+height = gets.to_i
+
+
+if length >=0 && width >=0 && height >=0
+  volume= length*width*height
+  print volume
+else puts 'Can not calculate volume'
 end
