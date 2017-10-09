@@ -1,6 +1,6 @@
 # Exercise 1 :Define a string variable with your name and print out the variable.
 my_name = "Emilie"
-print "Emilie"
+print my_name
 
 
 # Exercise 2: Define two integer variables: first_number and second_number. Assign a value to each variable. 
