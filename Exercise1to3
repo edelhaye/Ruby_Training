@@ -1,0 +1,34 @@
+# Exercise 1 :Define a string variable with your name and print out the variable.
+my_name = "Emilie"
+print "Emilie"
+
+
+# Exercise 2: Define two integer variables: first_number and second_number. Assign a value to each variable. 
+# Use the five arithmetic operators ( +, -, *, /, %) to perform operations on the two integers.
+# Print the results of your arithmetic operations 
+
+first_number = 50
+second_number = 10
+
+puts first_number + second_number
+puts first_number - second_number
+puts first_number * second_number
+puts first_number / second_number
+puts first_number % second_number
+
+
+# Exercise 3: Now we want the user to define the value of our variables.
+
+print "Enter a first number: "
+first_number = gets.to_i
+print "Enter a second number: "
+second_number = gets.to_i
+
+puts first_number + second_number
+puts first_number - second_number
+puts first_number * second_number
+puts first_number / second_number
+puts first_number % second_number
+
+# Exercise 4: The user needs to define his name and age. The code needs to print out the following complete sentence:
+# "Hello, your name is Sam and you are 20 years old."
