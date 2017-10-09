@@ -49,16 +49,15 @@ a / b <= b
 100 % b != c % b
 a % b == c / b || a / b – 1 == c / b
 
-# Exercise 6: Conditionals
+# Conditionals: Control flow in Ruby
 if 1 < 2
   print "I'm getting printed because one is less than two!"
 end
-
-# Exercise 7: 
+ 
 if 10 < 2
   print "I'm getting printed because one is less than two!"
 else 
-  print "Dummie, one is not less than two!"
+  print "Dummie, ten is not less than two!"
 end
 
 # Challenge Exercise 8
