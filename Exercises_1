@@ -38,4 +38,17 @@ name = "Emilie"
 age = 25
 puts  "Hello, your name is #{name} and you are #{age} years old. "
 
-# Exercise 5: Conditionals
+
+# Exercise 6
+a = 9
+b = 3
+c = 7
+
+a / b <= b
+100 % b != c % b
+a % b == c / b || a / b – 1 == c / b
+
+# Exercise 6: Conditionals
+if 1 < 2
+  print "I'm getting printed because one is less than two!"
+end
