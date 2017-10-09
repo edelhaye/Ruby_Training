@@ -1,0 +1,31 @@
+# Exercise 5: Define a class animal. Add methods.
+class Animal
+
+  def initialize
+    puts "Creating a new animal"
+  end
+  
+  def set_name(new_name)
+    @name = new_name
+  end
+  
+  def name
+    @name
+  end
+  
+  def sound
+    return generic_sound
+  end
+end
+
+
+# Exercise 6: Create a new animal, a cat. Set his name to Peekaboo.
+cat = Animal.new
+cat.set_name("Peekaboo")
+puts cat.name
+
+
+# Exercise 7: Make Cats inherit from Animal
+# Add a function to the class animals that represent the sound it makes
+# Define the sound of your cat to “Miaw”
+
