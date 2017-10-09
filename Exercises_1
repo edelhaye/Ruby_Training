@@ -30,5 +30,12 @@ puts first_number * second_number
 puts first_number / second_number
 puts first_number % second_number
 
+
 # Exercise 4: The user needs to define his name and age. The code needs to print out the following complete sentence:
 # "Hello, your name is Sam and you are 20 years old."
+
+name = "Emilie"
+age = 25
+puts  "Hello, your name is #{name} and you are #{age} years old. "
+
+# Exercise 5: Conditionals
