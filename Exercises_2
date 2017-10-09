@@ -1,4 +1,12 @@
-# Exercise 5: Define a class animal. Add methods.
+# Show in editor: Everything in Ruby is an object.
+		true.class
+		name.class
+		number.class
+
+
+
+
+# Exercise 1: Define a class animal. Add methods.
 class Animal
 
   def initialize
@@ -19,13 +27,13 @@ class Animal
 end
 
 
-# Exercise 6: Create a new animal, a cat. Set his name to Peekaboo.
+# Exercise 2: Create a new animal, a cat. Set his name to Peekaboo.
 cat = Animal.new
 cat.set_name("Peekaboo")
 puts cat.name
 
 
-# Exercise 7: Make Cats inherit from Animal
+# Exercise 3: Make Cats inherit from Animal
 # Add a function to the class animals that represent the sound it makes
 # Define the sound of your cat to “Miaw”
 
