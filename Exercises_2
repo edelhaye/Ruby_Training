@@ -43,9 +43,15 @@ class Cars
   	@type= new_type
   end
   
-  def name
-    @name
+  def type
+    @type
   end
 
 audi = Car.new
+car.set_type("A1")
+puts car.type
+
+volkswagen = Car.new
+car.set_type("polo")
+puts car.type
 	
