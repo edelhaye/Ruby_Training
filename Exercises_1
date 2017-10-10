@@ -77,3 +77,20 @@ if length >=0 && width >=0 && height >=0
   print volume
 else puts 'Can not calculate volume'
 end
+
+
+# Challenge Exercise 7
+
+print "Enter your grade: "
+grade = gets.chomp
+
+case grade
+when "A"
+  puts 'Well done!'
+when "B"
+  puts 'Try harder!'
+when "C"
+  puts 'You need help!!!'
+else
+  puts "Enter a valid answer please!"
+end
