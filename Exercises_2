@@ -77,10 +77,52 @@ puts car.type
 	
 
 # Exercise 5: Blocks
+# Part one:
+7.times do
+  puts “This line need to be printed 7 times!”
+end
+
+
+# Part two
+x=10
+5.times do |x|
+  puts "x inside the block: #{x}"
+end
+
+print "x outside the block: #{x}"
+
+
+# Example: Hashes
+dictionary = { "one" => "eins", "two" => "zwei", "three" => "drei" }
+	puts dictionary["one"]
+
+
+# Exercise 6: 
+cities_array = ["Tokyo", "Berlin", "New York", "London"]
+
+print cities_array 
+puts '  Original array'
+
+cities_array.push("Brussels")
+print cities_array 
+puts ' Brussels added to the original array'
+
+cities_array.delete_at(0) # Start at index 0 for first element!!!
+# second option: cities_array.delete("Tokyo")
+print cities_array 
+puts 'Tokyo removed from the original array'
+
+cities_array.insert(1, "Paris")
+print cities_array 
+puts '  Added Paris in between Berlin and New York'
 
 
 
-# Exercise 6: Arrays
+# Exercise 7: Hashes
+
+
+
+# Exercise 8: Arrays and for loops
 
 # the array
 numbers = [20, 30, 25, 35, -16, 60, -10]
@@ -91,12 +133,6 @@ for number in numbers
   avg = sum / numbers.length
 end
 print avg
-
-# Exercise 7: Hashes
-
-
-
-# Exercise 8: Arrays and for loops
 
 
 # Example: libraries
