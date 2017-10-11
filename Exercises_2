@@ -117,12 +117,18 @@ print cities_array
 puts '  Added Paris in between Berlin and New York'
 
 
+# Exercise 7:
+File.open("D:/Users/EDELHAYE/Documents/array_notes.txt", 'r').each_line do |line|
+  line = line.strip.split ','
+  print line
+end
 
-# Exercise 7: Hashes
+
+# Exercise 8: Hashes
 
 
 
-# Exercise 8: Arrays and for loops
+# Exercise 9: Arrays and for loops
 
 # the array
 numbers = [20, 30, 25, 35, -16, 60, -10]
