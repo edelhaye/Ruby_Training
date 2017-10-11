@@ -14,7 +14,7 @@ number.class
 
 # Exercise 1: methods
 
-def customer(var1,var2,var3)
+def describe_customer(var1,var2,var3)
   puts " The name of the customer is #{var1}"
   puts " The customer is born in #{var2}"
   puts " The customer lives in #{var3}."
@@ -112,6 +112,11 @@ print cities_array
 puts '  Added Paris in between Berlin and New York'
 
 
+# Exercise 7:
+File.open("D:/Users/EDELHAYE/Documents/array_notes.txt", 'r').each_line do |line|
+  line = line.strip.split ','
+  print line
+end
 
 # Example: Hashes
 dictionary = { "one" => "eins", "two" => "zwei", "three" => "drei" }
@@ -130,15 +135,17 @@ translation = []
 
 english_words.each do |word|
     translation.push dictionary[word]
- end
- puts translation.join ' '
+end
+puts translation.join ' '
 
 
 # Exercise 8: Arrays and for loops
 
+# Exercise 9: Arrays and for loops
+
 # the array
 numbers = [20, 30, 25, 35, -16, 60, -10]
-#calculate sum of all array elements
+# calculate sum of all array elements
 sum = 0
 for number in numbers
   sum = sum + number
