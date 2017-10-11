@@ -8,9 +8,9 @@ end
 calc_mean(1,3)
 
 # Show in editor: Everything in Ruby is an object.
-		true.class
-		name.class
-		number.class
+true.class
+name.class
+number.class
 
 # Exercise 1: methods
 
@@ -79,7 +79,7 @@ puts car.type
 # Exercise 5: Blocks
 # Part one:
 7.times do
-  puts “This line need to be printed 7 times!”
+  puts "This line need to be printed 7 times!"
 end
 
 
@@ -90,11 +90,6 @@ x=10
 end
 
 print "x outside the block: #{x}"
-
-
-# Example: Hashes
-dictionary = { "one" => "eins", "two" => "zwei", "three" => "drei" }
-	puts dictionary["one"]
 
 
 # Exercise 6: 
@@ -118,8 +113,25 @@ puts '  Added Paris in between Berlin and New York'
 
 
 
-# Exercise 7: Hashes
+# Example: Hashes
+dictionary = { "one" => "eins", "two" => "zwei", "three" => "drei" }
+puts dictionary["one"]
 
+
+# Exercise 7: Hashes
+puts "Two in German is " + dictionary['two']
+
+# A phrase translator
+dictionary['please'] = 'bitte'
+dictionary['beer'] = 'Bier'
+
+english_words = "two beer please".split
+translation = []
+
+english_words.each do |word|
+    translation.push dictionary[word]
+ end
+ puts translation.join ' '
 
 
 # Exercise 8: Arrays and for loops
@@ -130,8 +142,8 @@ numbers = [20, 30, 25, 35, -16, 60, -10]
 sum = 0
 for number in numbers
   sum = sum + number
-  avg = sum / numbers.length
 end
+avg = sum / numbers.length
 print avg
 
 
