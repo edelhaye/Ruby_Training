@@ -20,7 +20,7 @@ def describe_customer(var1,var2,var3)
   puts " The customer lives in #{var3}."
 end
 
-customer("Luc", 1980, "Diegem")
+describe_customer("Luc", 1980, "Diegem")
 
 
 # Exercise 2: Define a class animal. Add methods.
