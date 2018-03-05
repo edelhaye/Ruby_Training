@@ -37,6 +37,19 @@ class Scenario2 < Test::Unit::TestCase
         more_button.click
         
         # Print the value of the "Styles" property in the datasheet
+        data_sheet_trs = @driver.find_element(css: 'section.page-product-box table.table-data-sheet tbody tr')
+        data_sheet_trs.each do |tr|
+            tds = tr.find_element(css: 'td')
+            key = td[0].text
+            value = td[1].text
+            puts "#{key} --> #{value}"
+            if (key == 'Styles')
+                puts 'Found it!'
+            end
+        end
+        
         # Verify that it is in new condition
+        condition = @driver.find_element(css: 'p#product_condition span.editable')
+        assert_equals('New', condition.text)
     end
 end
