@@ -24,5 +24,7 @@ class Scenario1b < Test::Unit::TestCase
         element = @driver.find_element(css: '.heading-counter')
         puts element.text
         assert_equal(7, element.text.to_i)
+
+        sleep 5 # For demo
     end
 end

@@ -28,20 +28,21 @@ class Scenario2 < Test::Unit::TestCase
         # Print how many results
         element = @driver.find_element(css: '.heading-counter')
         puts element.text
-        assert_equals(1, element.text.to_i)
+        assert_equal(1, element.text.to_i)
 
         # Grab the More button
         more_button = @wait.until {
-            @driver.find_element(css: 'a.button[title=View]>span')
+            @driver.find_element(css: 'a.button[title=View]')
         }
         more_button.click
-        
+              
         # Print the value of the "Styles" property in the datasheet
-        data_sheet_trs = @driver.find_element(css: 'section.page-product-box table.table-data-sheet tbody tr')
+        data_sheet_trs = @driver.find_elements(css: 'section.page-product-box table.table-data-sheet tbody tr')
+        
         data_sheet_trs.each do |tr|
-            tds = tr.find_element(css: 'td')
-            key = td[0].text
-            value = td[1].text
+            tds = tr.find_elements(css: 'td')
+            key = tds[0].text
+            value = tds[1].text
             puts "#{key} --> #{value}"
             if (key == 'Styles')
                 puts 'Found it!'
@@ -50,6 +51,8 @@ class Scenario2 < Test::Unit::TestCase
         
         # Verify that it is in new condition
         condition = @driver.find_element(css: 'p#product_condition span.editable')
-        assert_equals('New', condition.text)
+        assert_equal('New', condition.text)
+        
+        sleep 5 # For demo
     end
 end

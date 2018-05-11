@@ -16,5 +16,7 @@ search_box.submit
 element = driver.find_element(css: '.heading-counter')
 puts element.text
 
+sleep 5 # For demo
+
 # That's all folks!
 driver.quit

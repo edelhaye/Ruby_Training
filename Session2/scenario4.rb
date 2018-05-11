@@ -24,15 +24,21 @@ class Scenario3 < Test::Unit::TestCase
 
         search_button = @driver.find_element(css: 'button.button-search[name=submit_search]')
         search_button.click
-
-        # Grab the More button
-        more_button = @driver.find_element(css: 'a.button[title=View]>span')
+        
+        # Every result is wrapped in a "product-container" div
+        # Using find_elements (plural) to get an array of all elements
+        products = @driver.find_elements(css: 'div.product-container')
+        
+        # Take the second one and grab its More button
+        more_button = products[1].find_element(css: 'a.button[title=View]>span')
         more_button.click
+        sleep 5 # For demo
 
         # Grab the [+] button and add two dresses
         plus_button = @driver.find_element(css: 'a.product_quantity_up')
         2.times { plus_button.click }
-
+        sleep 5 # For demo
+        
         # Add to cart
         add_to_cart = @driver.find_element(css: 'p#add_to_cart button[name=Submit]')
         add_to_cart.click
