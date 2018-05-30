@@ -2,7 +2,7 @@
 require "selenium-webdriver"
 require "test/unit"
 
-class Scenario3 < Test::Unit::TestCase
+class Scenario4 < Test::Unit::TestCase
     def setup
         @driver = Selenium::WebDriver.for :chrome
 
